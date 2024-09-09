@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreringsskjema</title>
+</head>
+<body>
+    <header>
+        <a  href="index.html"><h1>Forside</h1></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="validering.html">Validerings oppgave</a>
+                </li>
+                <li>
+                    <a href="contact.html">Kontakt oss</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Registreringsskjema</h2>
+            <form method="post">
+                <label for="navn">Navn</label>
+                <input type="text" name="text" placeholder="Fride Standal" id="navn" maxlength="50" required pattern="[A-Za-zæøåÆØÅ ]{2,}">
+
+                <label>
+                    E-post:
+                    <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                </label>
+                <label>
+                    Passord:
+                    <input type="password" name="passord" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </label>
+                <label>
+                    Alder:
+                    <input type="number" name="Alder" min="18" max="99" required>
+                </label>
+                <label>
+                    Telefonnummer:
+                    <input type="tel" name="telefonnummer" placeholder="telefonnummer" pattern="[0-9]{8,12}" required>
+                </label>
+                <label>
+                    Fødselsdato:
+                    <input type="date" name="fødselsdato" max="2023-12-31" required>
+                </label>
+                <label>
+                    Kvinne
+                    <input type="radio" name="Kjønn" required>
+                </label>
+                <label>
+                    Mann
+                    <input type="radio" name="Kjønn">
+                </label>
+                <label>
+                    Annet
+                    <input type="radio" name="Kjønn">
+                </label>
+                <label>
+                    Land:
+                    <select name="Land" required>
+                        <option value="">Velg land</option>
+                        <option value="Norge">Norge</option>
+                        <option value="Sverige">Sverige</option>
+                        <option value="Danmark">Danmark</option>
+                    </select>
+                </label>
+                <label>
+                    Personvern:
+                    <input type="checkbox" required>
+                </label>
+                <label>
+                    <input type="submit" value="Send skjema">
+                </label>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Fride Standal epost: frides@hiof.no</p>
+    </footer>
+</body>
+</html>
