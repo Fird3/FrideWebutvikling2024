@@ -1,0 +1,42 @@
+html{
+    font-size: 18px; 
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#background-image{
+    background-image: url("img/starrynight.jpg");
+    padding: 0;
+    display: block;
+    margin: 0px auto;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+header h1{
+    position:relative;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.flex-menu-nettside{
+    display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 1rem;
+
+}
+
+.flex-menu-til-nettside{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+    
