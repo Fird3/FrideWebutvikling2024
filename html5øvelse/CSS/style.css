@@ -4,10 +4,11 @@ html{
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 #background-image{
-    background-image: url("img/starrynight.jpg");
+    background-image: url(img/starrynight.jpg);
     padding: 0;
     display: block;
     margin: 0px auto;
@@ -21,23 +22,24 @@ header h1{
     text-align: center;
     color: white;
     text-transform: uppercase;
+
+    
 }
 
-.flex-menu-nettside{
+nav ul{
     display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   gap: 1rem;
-
-}
-
-.flex-menu-til-nettside{
-    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 1rem;
-    padding: 0;
     margin: 0;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+    padding: 0;
+    width: 100%;
+    color: black;
+    text-decoration: none;
     
+}
+
+
+a:hover{
+    color: rgb(33, 67, 33);
+}
