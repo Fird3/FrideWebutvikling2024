@@ -1,5 +1,5 @@
-html{
-    font-size: 18px; 
+*{
+    box-sizing: border-box;
 }
 
 body{
@@ -7,39 +7,99 @@ body{
     margin: 0;
 }
 
-#background-image{
-    background-image: url(img/starrynight.jpg);
-    padding: 0;
-    display: block;
-    margin: 0px auto;
+#grid-container{
+    display: grid;
+    grid-template-areas: "header header header"
+                            "navigering navigering navigering"
+                            "main main aside"
+                            "footer footer footer";
+
+
+}
+
+a{
+    text-decoration: none;
+}
+
+aside nav ul li{
+    text-decoration: none;
+}
+header{
+    background-image: url('../img/water.jpg');
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    grid-area: header;
 }
 
 header h1{
-    position:relative;
-    text-align: center;
     color: white;
+    font-size: 50px;
     text-transform: uppercase;
+    text-align: center;
 
+
+}
+nav{
+    grid-area: navigering;
     
+
 }
 
-nav ul{
+.navigering{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     gap: 1rem;
-    margin: 0;
-    padding: 0;
     width: 100%;
-    color: black;
-    text-decoration: none;
-    
 }
 
-
 a:hover{
-    color: rgb(33, 67, 33);
+    text-decoration: underline;
+}
+
+main{
+    grid-area: main;
+    min-width: 400px;
+
+}
+
+.seksjon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.artiklene{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 4px;
+    padding: 1rem;
+
+
+}
+
+aside{
+    grid-area: aside;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-basis: 10%;
+    flex-direction: column;
+
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    width: 100%;
+
+
+}
+
+.siste-link{
+    background-color: rgb(61, 61, 61);
+    color: white;
 }
