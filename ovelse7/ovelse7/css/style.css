@@ -1,0 +1,127 @@
+html{
+
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo{
+    display: grid;
+    justify-content: center;
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+
+header section{
+    padding: 1rem;
+}
+
+header nav ul{
+    display: grid;
+    list-style: none;
+    justify-content: center;
+
+    
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+
+h1{
+    display: grid;
+    justify-content: center;
+
+}
+
+nav{
+    background-color: rgb(222, 222, 222);
+    padding: 1rem;
+}
+
+
+main section section{
+    padding: 1rem;
+    color: white;
+    background-color: rgb(99, 126, 101);
+
+}
+
+main section article{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#tjenester{
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+article{
+    background-color: rgb(222, 222, 222);
+    padding: 1rem;
+}
+
+#booking{
+    background-color: rgb(99, 126, 101);
+    color: white;
+    padding: 1rem;
+}
+
+#change-order{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.btn{
+    border-style: solid;
+    padding: 0.4rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+}
+
+#footer-logo{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer section ul li{
+    list-style: none;
+    padding: 0.4rem;
+}
+
+
+footer{
+    background-color: gray;
+    color: white;
+    padding: 1rem;
+}
+
+@media only screen and (min-width:680px){
+    header{
+        background-color: rgb(222, 222, 222);
+    }
+
+    header nav ul{
+        display: flex;
+    }
+    
+    #tjenester{
+        display: flex;
+    }
+
+}
