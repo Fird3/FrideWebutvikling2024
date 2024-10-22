@@ -1,1 +1,12 @@
+@use 'mixin' as *;
 @use 'layout' as *;
+@use 'design' as *;
+@use 'colors' as *;
+@use 'fonts' as *;
+
+
+body{
+    font-family: $mainFont;
+
+
+}

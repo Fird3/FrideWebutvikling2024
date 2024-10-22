@@ -1,0 +1,16 @@
+@mixin grid-placement($column, $row){
+    grid-column: #{$column};
+    grid-row: #{$row};
+}
+
+@mixin sub-grid($column, $row){
+    grid-column: #{$column};
+    grid-row: #{$row};
+}
+
+@mixin flexbox($wrap, $gap){
+    display: flex;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
