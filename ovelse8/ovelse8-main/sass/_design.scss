@@ -1,5 +1,14 @@
 @use 'colors' as *;
 
+
+.logo{
+    justify-content: center;
+    display: flex;
+    
+
+}
+
+
 .nav-meny{
     position: fixed;
     background-color: aqua;
@@ -33,4 +42,19 @@
 .artikler{
     border-radius: 20px;
     margin: 1rem;
+}
+
+.popularbox{
+    height: auto;
+    max-width: 50%;
+    border-radius: 20px;
+}
+
+.some{
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    justify-content: center;
 }
